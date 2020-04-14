@@ -114,6 +114,8 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#set" class="tsd-kind-icon">set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="iattributes.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
@@ -131,7 +133,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ihascomment.html">IHasComment</a>.<a href="ihascomment.html#comment">comment</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L123">types.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L123">types.ts:123</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,7 +149,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#size">size</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L134">types.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L145">types.ts:145</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,22 +160,62 @@
 					<a name="apply" class="tsd-anchor"></a>
 					<h3>apply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#apply">apply</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L137">types.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L148">types.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <span class="tsd-signature-symbol">{}</span></h5>
-									<ul class="tsd-parameters">
-									</ul>
+									<h5>attributes: <a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#clear">clear</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L150">types.ts:150</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="delete" class="tsd-anchor"></a>
+					<h3>delete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#delete">delete</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L149">types.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -191,7 +233,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L135">types.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L146">types.ts:146</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -208,14 +250,14 @@
 					<a name="set" class="tsd-anchor"></a>
 					<h3>set</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="iid.html" class="tsd-signature-type">IID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L136">types.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L147">types.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -224,7 +266,7 @@
 									<h5>key: <span class="tsd-signature-type">T</span></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="iid.html" class="tsd-signature-type">IID</a></h5>
+									<h5>value: <a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -242,7 +284,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="idot.html">IDot</a>.<a href="idot.html#todot">toDot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/b87f13a/src/types.ts#L106">types.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/kamiazya/ts-graphviz/blob/5d71c0c/src/types.ts#L106">types.ts:106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -261,42 +303,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="../classes/attributes.html" class="tsd-kind-icon">Attributes</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/context.html" class="tsd-kind-icon">Context</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/digraph.html" class="tsd-kind-icon">Digraph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/edge.html" class="tsd-kind-icon">Edge</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/id.html" class="tsd-kind-icon">ID</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/node.html" class="tsd-kind-icon">Node</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/subgraph.html" class="tsd-kind-icon">Subgraph</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-has-type-parameter">
@@ -312,6 +318,12 @@
 								<a href="iattributes.html#apply" class="tsd-kind-icon">apply</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iattributes.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iattributes.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iattributes.html#get" class="tsd-kind-icon">get</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -324,60 +336,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="iattributesbase.html" class="tsd-kind-icon">IAttributes<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="icluster.html" class="tsd-kind-icon">ICluster</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="icontext.html" class="tsd-kind-icon">IContext</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="idot.html" class="tsd-kind-icon">IDot</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iedge.html" class="tsd-kind-icon">IEdge</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iid.html" class="tsd-kind-icon">IID</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="inode.html" class="tsd-kind-icon">INode</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="inodewithport.html" class="tsd-kind-icon">INode<wbr>With<wbr>Port</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iport.html" class="tsd-kind-icon">IPort</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="irootcluster.html" class="tsd-kind-icon">IRoot<wbr>Cluster</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#digraph" class="tsd-kind-icon">digraph</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#graph" class="tsd-kind-icon">graph</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="../globals.html#strict" class="tsd-kind-icon">strict</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
