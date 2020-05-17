@@ -100,15 +100,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="nodewithport.html#compass" class="tsd-kind-icon">compass</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="nodewithport.html#node" class="tsd-kind-icon">node</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="nodewithport.html#port" class="tsd-kind-icon">port</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodewithport.html#toedgetargetdot" class="tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot</a></li>
 							</ul>
 						</section>
 					</div>
@@ -120,19 +113,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<wbr>With<wbr>Port<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="node.html" class="tsd-signature-type">Node</a>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iport.html" class="tsd-signature-type">IPort</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="nodewithport.html" class="tsd-signature-type">NodeWithPort</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<wbr>With<wbr>Port<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="../interfaces/inode.html" class="tsd-signature-type">INode</a>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iport.html" class="tsd-signature-type">IPort</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="nodewithport.html" class="tsd-signature-type">NodeWithPort</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L18">model/Node.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L27">model/nodes.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="node.html" class="tsd-signature-type">Node</a></h5>
+									<h5>node: <a href="../interfaces/inode.html" class="tsd-signature-type">INode</a></h5>
 								</li>
 								<li>
 									<h5>port: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iport.html" class="tsd-signature-type">IPort</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -146,72 +139,26 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="compass" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compass</h3>
-					<div class="tsd-signature tsd-kind-icon">compass<span class="tsd-signature-symbol">:</span> <a href="../modules/compass.html" class="tsd-signature-type">Compass</a></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/inodewithport.html">INodeWithPort</a>.<a href="../interfaces/inodewithport.html#compass">compass</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L18">model/Node.ts:18</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Specify the direction of the edge.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="node" class="tsd-anchor"></a>
 					<h3>node</h3>
-					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <a href="node.html" class="tsd-signature-type">Node</a></div>
+					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <a href="../interfaces/inode.html" class="tsd-signature-type">INode</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/inodewithport.html">INodeWithPort</a>.<a href="../interfaces/inodewithport.html#node">node</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L19">model/Node.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L28">model/nodes.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <a href="id.html" class="tsd-signature-type">ID</a></div>
+					<h3>port</h3>
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iport.html" class="tsd-signature-type">IPort</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/inodewithport.html">INodeWithPort</a>.<a href="../interfaces/inodewithport.html#port">port</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L16">model/Node.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L28">model/nodes.ts:28</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Specify port embedded in Label.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toedgetargetdot" class="tsd-anchor"></a>
-					<h3>to<wbr>Edge<wbr>Target<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/inodewithport.html">INodeWithPort</a>.<a href="../interfaces/inodewithport.html#toedgetargetdot">toEdgeTargetDot</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L25">model/Node.ts:25</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Converts a NodeWithPort to an EdgeTarget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -234,16 +181,10 @@
 								<a href="nodewithport.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="nodewithport.html#compass" class="tsd-kind-icon">compass</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="nodewithport.html#node" class="tsd-kind-icon">node</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="nodewithport.html#port" class="tsd-kind-icon">port</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="nodewithport.html#toedgetargetdot" class="tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot</a>
 							</li>
 						</ul>
 					</li>

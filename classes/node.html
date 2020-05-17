@@ -77,7 +77,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="dotbase.html" class="tsd-signature-type">DotBase</a>
+						<a href="dotobject.html" class="tsd-signature-type">DotObject</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Node</span>
@@ -89,7 +89,6 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/idot.html" class="tsd-signature-type">IDot</a></li>
 					<li><a href="../interfaces/inode.html" class="tsd-signature-type">INode</a></li>
 				</ul>
 			</section>
@@ -115,8 +114,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="node.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="node.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="node.html#toedgetargetdot" class="tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot</a></li>
 							</ul>
 						</section>
 					</div>
@@ -128,19 +125,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="node.html" class="tsd-signature-type">Node</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="node.html" class="tsd-signature-type">Node</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L39">model/Node.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L38">model/nodes.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="node.html" class="tsd-signature-type">Node</a></h4>
@@ -153,11 +153,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="attributes" class="tsd-anchor"></a>
 					<h3>attributes</h3>
-					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="attributes.html" class="tsd-signature-type">Attributes</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"URL"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"area"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"color"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"colorscheme"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"comment"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"distortion"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fillcolor"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fixedsize"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fontcolor"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fontname"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fontsize"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"gradientangle"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"group"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"height"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"href"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"image"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"imagepos"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"imagescale"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"label"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"labelloc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"layer"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"margin"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"nojustify"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ordering"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"orientation"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"penwidth"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peripheries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pin"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pos"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rects"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"regular"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"samplepoints"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shapefile"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"showboxes"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"sides"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"skew"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"sortv"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"style"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"target"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tooltip"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"vertices"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"width"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"xlabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"xlp"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"z"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Attributes&lt;attribute.Node&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iattributes.html" class="tsd-signature-type">IAttributes</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type">Node</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#attributes">attributes</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L37">model/Node.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L38">model/nodes.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +168,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#comment">comment</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L36">model/Node.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L37">model/nodes.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,7 +184,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L40">model/Node.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L39">model/nodes.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +202,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#port">port</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L59">model/Node.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/nodes.ts#L45">model/nodes.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,53 +217,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="nodewithport.html" class="tsd-signature-type">NodeWithPort</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="todot" class="tsd-anchor"></a>
-					<h3>to<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#todot">toDot</a></p>
-								<p>Overrides DotBase.toDot</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L46">model/Node.ts:46</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Convert Node to Dot language.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toedgetargetdot" class="tsd-anchor"></a>
-					<h3>to<wbr>Edge<wbr>Target<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/inode.html">INode</a>.<a href="../interfaces/inode.html#toedgetargetdot">toEdgeTargetDot</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Node.ts#L54">model/Node.ts:54</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Converts a Node to an EdgeTarget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -298,12 +251,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="node.html#port" class="tsd-kind-icon">port</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="node.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="node.html#toedgetargetdot" class="tsd-kind-icon">to<wbr>Edge<wbr>Target<wbr>Dot</a>
 							</li>
 						</ul>
 					</li>

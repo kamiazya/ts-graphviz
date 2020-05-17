@@ -97,7 +97,6 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/idot.html" class="tsd-signature-type">IDot</a></li>
 					<li><a href="../interfaces/iattributesbase.html" class="tsd-signature-type">IAttributesBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/iattributes.html" class="tsd-signature-type">IAttributes</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
@@ -106,6 +105,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -116,9 +121,10 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#apply" class="tsd-kind-icon">apply</a></li>
@@ -126,10 +132,36 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="attributes.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="attributes.html#todot" class="tsd-kind-icon">to<wbr>Dot</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Attributes<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="attributes.html" class="tsd-signature-type">Attributes</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from AttributesBase.__constructor</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L9">model/attributes-base.ts:9</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="attributes.html" class="tsd-signature-type">Attributes</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -141,7 +173,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#comment">comment</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Attributes.ts#L12">model/Attributes.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L58">model/attributes-base.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +196,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from AttributesBase.size</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L11">model/AttributesBase.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L23">model/attributes-base.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -176,14 +208,32 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="values" class="tsd-anchor"></a>
+					<h3>values</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> values<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from AttributesBase.values</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L18">model/attributes-base.ts:18</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="apply" class="tsd-anchor"></a>
 					<h3>apply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#attributesentities" class="tsd-signature-type">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -191,13 +241,13 @@
 								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#apply">apply</a></p>
 								<p>Inherited from AttributesBase.apply</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L27">model/AttributesBase.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L39">model/attributes-base.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>attributes: <a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#attributesentities" class="tsd-signature-type">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -216,7 +266,7 @@
 								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#clear">clear</a></p>
 								<p>Inherited from AttributesBase.clear</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L33">model/AttributesBase.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L46">model/attributes-base.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -235,7 +285,7 @@
 								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#delete">delete</a></p>
 								<p>Inherited from AttributesBase.delete</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L23">model/AttributesBase.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L35">model/attributes-base.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -252,7 +302,7 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="id.html" class="tsd-signature-type">ID</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -260,7 +310,7 @@
 								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#get">get</a></p>
 								<p>Inherited from AttributesBase.get</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L15">model/AttributesBase.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L27">model/attributes-base.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,7 +324,7 @@
 									<h5>key: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="id.html" class="tsd-signature-type">ID</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -290,7 +340,7 @@
 								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#set">set</a></p>
 								<p>Inherited from AttributesBase.set</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/AttributesBase.ts#L19">model/AttributesBase.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/734743b/src/model/attributes-base.ts#L31">model/attributes-base.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -311,30 +361,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="todot" class="tsd-anchor"></a>
-					<h3>to<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Dot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/iattributes.html">IAttributes</a>.<a href="../interfaces/iattributes.html#todot">toDot</a></p>
-								<p>Overrides DotBase.toDot</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/6f3117f/src/model/Attributes.ts#L15">model/Attributes.ts:15</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Convert Attributes to Dot language.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -352,11 +378,17 @@
 					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="attributes.html" class="tsd-kind-icon">Attributes</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="attributes.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="attributes.html#comment" class="tsd-kind-icon">comment</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="attributes.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="attributes.html#values" class="tsd-kind-icon">values</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="attributes.html#apply" class="tsd-kind-icon">apply</a>
@@ -372,9 +404,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="attributes.html#set" class="tsd-kind-icon">set</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="attributes.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
 							</li>
 						</ul>
 					</li>

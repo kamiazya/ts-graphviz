@@ -80,7 +80,6 @@
 							<li>UMD, ESM, CommonJS</li>
 						</ul>
 					</li>
-					<li>No dependency.</li>
 				</ul>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
@@ -98,68 +97,178 @@ npm install ts-graphviz</code></pre>
 					<h3>Browser</h3>
 				</a>
 				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//unpkg.com/ts-graphviz/lib/bundle.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h2>Usage</h2>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
 				</a>
-				<a href="#script" id="script" style="color: inherit; text-decoration: none;">
-					<h3>Script</h3>
+				<a href="#script-style" id="script-style" style="color: inherit; text-decoration: none;">
+					<h3>Script style</h3>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
 
 <span class="hljs-keyword">const</span> g = digraph(<span class="hljs-string">'G'</span>);
 
 <span class="hljs-keyword">const</span> subgraphA = g.createSubgraph(<span class="hljs-string">'A'</span>);
 <span class="hljs-keyword">const</span> nodeA1 = subgraphA.createNode(<span class="hljs-string">'A_node1'</span>);
 <span class="hljs-keyword">const</span> nodeA2 = subgraphA.createNode(<span class="hljs-string">'A_node2'</span>);
-subgraphA.createEdge(nodeA1, nodeA2);
+subgraphA.createEdge([nodeA1, nodeA2]);
 
 <span class="hljs-keyword">const</span> subgraphB = g.createSubgraph(<span class="hljs-string">'B'</span>);
 <span class="hljs-keyword">const</span> nodeB1 = subgraphB.createNode(<span class="hljs-string">'B_node1'</span>);
 <span class="hljs-keyword">const</span> nodeB2 = subgraphB.createNode(<span class="hljs-string">'B_node2'</span>);
-subgraphA.createEdge(nodeB1, nodeB2);
+subgraphA.createEdge([nodeB1, nodeB2]);
 
 <span class="hljs-keyword">const</span> node1 = g.createNode(<span class="hljs-string">'node1'</span>);
 <span class="hljs-keyword">const</span> node2 = g.createNode(<span class="hljs-string">'node2'</span>);
-g.createEdge(node1, node2);
-<span class="hljs-keyword">const</span> dot = g.toDot();
+g.createEdge([node1, node2]);
+<span class="hljs-keyword">const</span> dot = toDot(g);
 <span class="hljs-built_in">console</span>.log(dot);</code></pre>
-				<a href="#callback-style-api" id="callback-style-api" style="color: inherit; text-decoration: none;">
-					<h3>Callback style API</h3>
-				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
-
-<span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function"><span class="hljs-params">g</span> =&gt;</span> {
-  g.subgraph(<span class="hljs-string">'A'</span>, <span class="hljs-function"><span class="hljs-params">A</span> =&gt;</span> {
-    <span class="hljs-keyword">const</span> node1 = A.node(<span class="hljs-string">'A_node1'</span>);
-    <span class="hljs-keyword">const</span> node2 = A.node(<span class="hljs-string">'A_node2'</span>);
-    A.edge([node1, node2]);
-  });
-  g.subgraph(<span class="hljs-string">'B'</span>, <span class="hljs-function"><span class="hljs-params">B</span> =&gt;</span> {
-    <span class="hljs-keyword">const</span> node1 = B.node(<span class="hljs-string">'B_node1'</span>);
-    <span class="hljs-keyword">const</span> node2 = B.node(<span class="hljs-string">'B_node2'</span>);
-    B.edge([node1, node2]);
-  });
-  g.edge([<span class="hljs-string">'node1'</span>, <span class="hljs-string">'node2'</span>]);
-});
-<span class="hljs-keyword">const</span> dot = G.toDot();
-<span class="hljs-built_in">console</span>.log(dot);</code></pre>
-				<a href="#output" id="output" style="color: inherit; text-decoration: none;">
-					<h3>Output</h3>
-				</a>
-				<pre><code class="language-graphviz">digraph &quot;G&quot; {
+				<pre><code class="language-dot">digraph &quot;G&quot; {
   &quot;node1&quot;;
   &quot;node2&quot;;
   subgraph &quot;A&quot; {
     &quot;A_node1&quot;;
     &quot;A_node2&quot;;
     &quot;A_node1&quot; -&gt; &quot;A_node2&quot;;
+    &quot;B_node1&quot; -&gt; &quot;B_node2&quot;;
   }
   subgraph &quot;B&quot; {
     &quot;B_node1&quot;;
     &quot;B_node2&quot;;
-    &quot;B_node1&quot; -&gt; &quot;B_node2&quot;;
   }
   &quot;node1&quot; -&gt; &quot;node2&quot;;
+}</code></pre>
+				<a href="#callback-style" id="callback-style" style="color: inherit; text-decoration: none;">
+					<h3>Callback style</h3>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { digraph, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+
+ <span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> a = g.node(<span class="hljs-string">'aa'</span>);
+  <span class="hljs-keyword">const</span> b = g.node(<span class="hljs-string">'bb'</span>);
+  <span class="hljs-keyword">const</span> c = g.node(<span class="hljs-string">'cc'</span>);
+  g.edge([a, b, c], {
+    [attribute.color]: <span class="hljs-string">'red'</span>,
+  });
+  g.subgraph(<span class="hljs-string">'A'</span>, <span class="hljs-function">(<span class="hljs-params">A</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> Aa = A.node(<span class="hljs-string">'Aaa'</span>, {
+      [attribute.color]: <span class="hljs-string">'pink'</span>,
+    });
+
+    <span class="hljs-keyword">const</span> Ab = A.node(<span class="hljs-string">'Abb'</span>, {
+      [attribute.color]: <span class="hljs-string">'violet'</span>,
+    });
+    <span class="hljs-keyword">const</span> Ac = A.node(<span class="hljs-string">'Acc'</span>);
+    A.edge([Aa.port(<span class="hljs-string">'a'</span>), Ab, Ac, <span class="hljs-string">'E'</span>], {
+      [attribute.color]: <span class="hljs-string">'red'</span>,
+    });
+  });
+});
+<span class="hljs-built_in">console</span>.log(dot);</code></pre>
+				<pre><code class="language-dot">digraph &quot;G&quot; {
+  &quot;aa&quot;;
+  &quot;bb&quot;;
+  &quot;cc&quot;;
+  subgraph &quot;A&quot; {
+    &quot;Aaa&quot; [
+      color = &quot;pink&quot;,
+    ];
+    &quot;Abb&quot; [
+      color = &quot;violet&quot;,
+    ];
+    &quot;Acc&quot;;
+    &quot;Aaa&quot;:&quot;a&quot; -&gt; &quot;Abb&quot; -&gt; &quot;Acc&quot; -&gt; &quot;E&quot; [
+      color = &quot;red&quot;,
+    ];
+  }
+  &quot;aa&quot; -&gt; &quot;bb&quot; -&gt; &quot;cc&quot; [
+    color = &quot;red&quot;,
+  ];
+}</code></pre>
+				<a href="#class-base-api" id="class-base-api" style="color: inherit; text-decoration: none;">
+					<h3>Class base API</h3>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Digraph, Subgraph, Node, Edge, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+
+<span class="hljs-keyword">const</span> G = <span class="hljs-keyword">new</span> Digraph();
+<span class="hljs-keyword">const</span> A = <span class="hljs-keyword">new</span> Subgraph(<span class="hljs-string">'A'</span>);
+<span class="hljs-keyword">const</span> node1 = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">'node1'</span>, {
+  [attribute.color]: <span class="hljs-string">'red'</span>,
+});
+<span class="hljs-keyword">const</span> node2 = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">'node2'</span>, {
+  [attribute.color]: <span class="hljs-string">'blue'</span>,
+});
+<span class="hljs-keyword">const</span> edge = <span class="hljs-keyword">new</span> Edge([node1, node2], {
+  [attribute.label]: <span class="hljs-string">'Edge Label'</span>,
+  [attribute.color]: <span class="hljs-string">'pink'</span>,
+});
+G.addSubgraph(A);
+A.addNode(node1);
+A.addNode(node2);
+A.addEdge(edge);
+<span class="hljs-keyword">const</span> dot = toDot(G);
+<span class="hljs-built_in">console</span>.log(dot);</code></pre>
+				<pre><code class="language-dot">digraph {
+  subgraph &quot;A&quot; {
+    &quot;node1&quot; [
+      color = &quot;red&quot;,
+    ];
+    &quot;node2&quot; [
+      color = &quot;blue&quot;,
+    ];
+    &quot;node1&quot; -&gt; &quot;node2&quot; [
+      label = &quot;Edge Label&quot;,
+      color = &quot;pink&quot;,
+    ];
+  }
+}</code></pre>
+				<a href="#custom-classes" id="custom-classes" style="color: inherit; text-decoration: none;">
+					<h3>Custom Classes</h3>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Digraph, Node, Edge, EdgeTarget, attribute, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+
+<span class="hljs-keyword">class</span> MyCustomDigraph <span class="hljs-keyword">extends</span> Digraph {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">super</span>(<span class="hljs-string">'G'</span>, {
+      [attribute.label]: <span class="hljs-string">'This is Custom Digraph'</span>,
+    });
+  }
+}
+<span class="hljs-keyword">class</span> MyCustomNode <span class="hljs-keyword">extends</span> Node {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">id: <span class="hljs-built_in">number</span></span>) {
+    <span class="hljs-keyword">super</span>(<span class="hljs-string">`node<span class="hljs-subst">${id}</span>`</span>, {
+      [attribute.label]: <span class="hljs-string">`This is Custom Node <span class="hljs-subst">${id}</span>`</span>,
+    });
+  }
+}
+
+<span class="hljs-keyword">class</span> MyCustomEdge <span class="hljs-keyword">extends</span> Edge {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">targets: ReadonlyArray&lt;EdgeTarget&gt;</span>) {
+    <span class="hljs-keyword">super</span>(targets, {
+      [attribute.label]: <span class="hljs-string">'This is Custom Edge'</span>,
+    });
+  }
+}
+
+<span class="hljs-keyword">const</span> digraph = <span class="hljs-keyword">new</span> MyCustomDigraph();
+<span class="hljs-keyword">const</span> node1 = <span class="hljs-keyword">new</span> MyCustomNode(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">const</span> node2 = <span class="hljs-keyword">new</span> MyCustomNode(<span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> edge = <span class="hljs-keyword">new</span> MyCustomEdge([node1, node2]);
+digraph.addNode(node1);
+digraph.addNode(node2);
+digraph.addEdge(edge);
+<span class="hljs-keyword">const</span> dot = toDot(g);
+<span class="hljs-built_in">console</span>.log(dot);</code></pre>
+				<pre><code class="language-dot">digraph &quot;G&quot; {
+  label = &quot;This is Custom Digraph&quot;;
+  &quot;node1&quot; [
+    label = &quot;This is Custom Node 1&quot;,
+  ];
+  &quot;node2&quot; [
+    label = &quot;This is Custom Node 2&quot;,
+  ];
+  &quot;node1&quot; -&gt; &quot;node2&quot; [
+    label = &quot;This is Custom Edge&quot;,
+  ];
 }</code></pre>
 				<a href="#see-also" id="see-also" style="color: inherit; text-decoration: none;">
 					<h2>See Also</h2>
@@ -214,16 +323,7 @@ g.createEdge(node1, node2);
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/clustertype.html">Cluster<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="modules/compass.html">Compass</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/dotentitytype.html">Dot<wbr>Entity<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/rootclustertype.html">Root<wbr>Cluster<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/attribute.html">attribute</a>
@@ -236,13 +336,10 @@ g.createEdge(node1, node2);
 						<a href="classes/attributes.html" class="tsd-kind-icon">Attributes</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/context.html" class="tsd-kind-icon">Context</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/digraph.html" class="tsd-kind-icon">Digraph</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/dotbase.html" class="tsd-kind-icon">Dot<wbr>Base</a>
+						<a href="classes/dotobject.html" class="tsd-kind-icon">Dot<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/edge.html" class="tsd-kind-icon">Edge</a>
@@ -254,19 +351,22 @@ g.createEdge(node1, node2);
 						<a href="classes/graphvizobject.html" class="tsd-kind-icon">Graphviz<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/id.html" class="tsd-kind-icon">ID</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/node.html" class="tsd-kind-icon">Node</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/nodewithport.html" class="tsd-kind-icon">Node<wbr>With<wbr>Port</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/renderer.html" class="tsd-kind-icon">Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/rootcluster.html" class="tsd-kind-icon">Root<wbr>Cluster</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/subgraph.html" class="tsd-kind-icon">Subgraph</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/createrootfunction.html" class="tsd-kind-icon">Create<wbr>Root<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a>
@@ -278,25 +378,16 @@ g.createEdge(node1, node2);
 						<a href="interfaces/icluster.html" class="tsd-kind-icon">ICluster</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icontext.html" class="tsd-kind-icon">IContext</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/idot.html" class="tsd-kind-icon">IDot</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/iedge.html" class="tsd-kind-icon">IEdge</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iedgetarget.html" class="tsd-kind-icon">IEdge<wbr>Target</a>
+						<a href="interfaces/iforwardrefnode.html" class="tsd-kind-icon">IForward<wbr>Ref<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/ihasattributes.html" class="tsd-kind-icon">IHas<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ihascomment.html" class="tsd-kind-icon">IHas<wbr>Comment</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iid.html" class="tsd-kind-icon">IID</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/inode.html" class="tsd-kind-icon">INode</a>
@@ -314,6 +405,9 @@ g.createEdge(node1, node2);
 						<a href="interfaces/isubgraph.html" class="tsd-kind-icon">ISubgraph</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#attributesentities" class="tsd-kind-icon">Attributes<wbr>Entities</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#attributesobject" class="tsd-kind-icon">Attributes<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -323,7 +417,13 @@ g.createEdge(node1, node2);
 						<a href="globals.html#clustersubgraphattributes" class="tsd-kind-icon">Cluster<wbr>Subgraph<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#dot" class="tsd-kind-icon">Dot</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#edgeattributes" class="tsd-kind-icon">Edge<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#edgetarget" class="tsd-kind-icon">Edge<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#edgetargetlike" class="tsd-kind-icon">Edge<wbr>Target<wbr>Like</a>
@@ -335,10 +435,109 @@ g.createEdge(node1, node2);
 						<a href="globals.html#rootclusterattributes" class="tsd-kind-icon">Root<wbr>Cluster<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="globals.html#concatwordswithcolon" class="tsd-kind-icon">concat<wbr>Words<wbr>With<wbr>Colon</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#concatwordswithspace" class="tsd-kind-icon">concat<wbr>Words<wbr>With<wbr>Space</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#digraph" class="tsd-kind-icon">digraph</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#graph" class="tsd-kind-icon">graph</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#join" class="tsd-kind-icon">join</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#joinlines" class="tsd-kind-icon">join<wbr>Lines</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#quote" class="tsd-kind-icon">quote</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#renderattributewithcomma" class="tsd-kind-icon">render<wbr>Attribute<wbr>With<wbr>Comma</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#renderattributewithsemi" class="tsd-kind-icon">render<wbr>Attribute<wbr>With<wbr>Semi</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#spaceleftpad" class="tsd-kind-icon">space<wbr>Left<wbr>Pad</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#commentout" class="tsd-kind-icon">comment<wbr>Out</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#commentoutifexist" class="tsd-kind-icon">comment<wbr>Out<wbr>IfExist</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#concatwordsfactory" class="tsd-kind-icon">concat<wbr>Words<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#escape" class="tsd-kind-icon">escape</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#indent" class="tsd-kind-icon">indent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isattributes" class="tsd-kind-icon">is<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdigraph" class="tsd-kind-icon">is<wbr>Digraph</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isedge" class="tsd-kind-icon">is<wbr>Edge</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isforwardrefnode" class="tsd-kind-icon">is<wbr>Forward<wbr>Ref<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isgraph" class="tsd-kind-icon">is<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnode" class="tsd-kind-icon">is<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnodewithport" class="tsd-kind-icon">is<wbr>Node<wbr>With<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrootcluster" class="tsd-kind-icon">is<wbr>Root<wbr>Cluster</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#issubgraph" class="tsd-kind-icon">is<wbr>Subgraph</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#joinwith" class="tsd-kind-icon">join<wbr>With</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#leftpad" class="tsd-kind-icon">left<wbr>Pad</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#leftpadfactory" class="tsd-kind-icon">left<wbr>Pad<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#renderattributebuilder" class="tsd-kind-icon">render<wbr>Attribute<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#renderattributevalue" class="tsd-kind-icon">render<wbr>Attribute<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#renderattributes" class="tsd-kind-icon">render<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#renderclustertype" class="tsd-kind-icon">render<wbr>Cluster<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#renderedgetarget" class="tsd-kind-icon">render<wbr>Edge<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#todot" class="tsd-kind-icon">to<wbr>Dot</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wrap" class="tsd-kind-icon">wrap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wrapfactory" class="tsd-kind-icon">wrap<wbr>Factory</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#strict" class="tsd-kind-icon">strict</a>
