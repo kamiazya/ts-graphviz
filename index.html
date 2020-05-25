@@ -147,19 +147,19 @@ g.createEdge([node1, node2]);
   <span class="hljs-keyword">const</span> b = g.node(<span class="hljs-string">'bb'</span>);
   <span class="hljs-keyword">const</span> c = g.node(<span class="hljs-string">'cc'</span>);
   g.edge([a, b, c], {
-    [attribute.color]: <span class="hljs-string">'red'</span>,
+    [attribute.color]: <span class="hljs-string">'red'</span>
   });
   g.subgraph(<span class="hljs-string">'A'</span>, <span class="hljs-function">(<span class="hljs-params">A</span>) =&gt;</span> {
     <span class="hljs-keyword">const</span> Aa = A.node(<span class="hljs-string">'Aaa'</span>, {
-      [attribute.color]: <span class="hljs-string">'pink'</span>,
+      [attribute.color]: <span class="hljs-string">'pink'</span>
     });
 
     <span class="hljs-keyword">const</span> Ab = A.node(<span class="hljs-string">'Abb'</span>, {
-      [attribute.color]: <span class="hljs-string">'violet'</span>,
+      [attribute.color]: <span class="hljs-string">'violet'</span>
     });
     <span class="hljs-keyword">const</span> Ac = A.node(<span class="hljs-string">'Acc'</span>);
     A.edge([Aa.port(<span class="hljs-string">'a'</span>), Ab, Ac, <span class="hljs-string">'E'</span>], {
-      [attribute.color]: <span class="hljs-string">'red'</span>,
+      [attribute.color]: <span class="hljs-string">'red'</span>
     });
   });
 });
@@ -187,19 +187,19 @@ g.createEdge([node1, node2]);
 				<a href="#class-base-api" id="class-base-api" style="color: inherit; text-decoration: none;">
 					<h3>Class base API</h3>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Digraph, Subgraph, Node, Edge, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { attribute, Digraph, Subgraph, Node, Edge, toDot } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-graphviz'</span>;
 
 <span class="hljs-keyword">const</span> G = <span class="hljs-keyword">new</span> Digraph();
 <span class="hljs-keyword">const</span> A = <span class="hljs-keyword">new</span> Subgraph(<span class="hljs-string">'A'</span>);
 <span class="hljs-keyword">const</span> node1 = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">'node1'</span>, {
-  [attribute.color]: <span class="hljs-string">'red'</span>,
+  [attribute.color]: <span class="hljs-string">'red'</span>
 });
 <span class="hljs-keyword">const</span> node2 = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">'node2'</span>, {
-  [attribute.color]: <span class="hljs-string">'blue'</span>,
+  [attribute.color]: <span class="hljs-string">'blue'</span>
 });
 <span class="hljs-keyword">const</span> edge = <span class="hljs-keyword">new</span> Edge([node1, node2], {
   [attribute.label]: <span class="hljs-string">'Edge Label'</span>,
-  [attribute.color]: <span class="hljs-string">'pink'</span>,
+  [attribute.color]: <span class="hljs-string">'pink'</span>
 });
 G.addSubgraph(A);
 A.addNode(node1);
@@ -236,7 +236,7 @@ A.addEdge(edge);
 <span class="hljs-keyword">class</span> MyCustomNode <span class="hljs-keyword">extends</span> Node {
   <span class="hljs-keyword">constructor</span>(<span class="hljs-params">id: <span class="hljs-built_in">number</span></span>) {
     <span class="hljs-keyword">super</span>(<span class="hljs-string">`node<span class="hljs-subst">${id}</span>`</span>, {
-      [attribute.label]: <span class="hljs-string">`This is Custom Node <span class="hljs-subst">${id}</span>`</span>,
+      [attribute.label]: <span class="hljs-string">`This is Custom Node <span class="hljs-subst">${id}</span>`</span>
     });
   }
 }
@@ -244,7 +244,7 @@ A.addEdge(edge);
 <span class="hljs-keyword">class</span> MyCustomEdge <span class="hljs-keyword">extends</span> Edge {
   <span class="hljs-keyword">constructor</span>(<span class="hljs-params">targets: ReadonlyArray&lt;EdgeTarget&gt;</span>) {
     <span class="hljs-keyword">super</span>(targets, {
-      [attribute.label]: <span class="hljs-string">'This is Custom Edge'</span>,
+      [attribute.label]: <span class="hljs-string">'This is Custom Edge'</span>
     });
   }
 }
