@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for ts-graphviz">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">ts-graphviz</a>
 				</li>
 				<li>
 					<a href="icluster.html">ICluster</a>
@@ -70,7 +69,7 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+						<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span> = <span class="tsd-signature-type">string</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -78,33 +77,24 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="ihascomment.html" class="tsd-signature-type">IHasComment</a>
+						<a href="ihascomment.html" class="tsd-signature-type" data-tsd-kind="Interface">IHasComment</a>
 					</li>
 					<li>
-						<a href="iattributesbase.html" class="tsd-signature-type">IAttributesBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="iattributesbase.html" class="tsd-signature-type" data-tsd-kind="Interface">IAttributesBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ICluster</span>
 								<ul class="tsd-hierarchy">
 									<li>
-										<a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a>
+										<a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a>
 									</li>
 									<li>
-										<a href="irootcluster.html" class="tsd-signature-type">IRootCluster</a>
+										<a href="irootcluster.html" class="tsd-signature-type" data-tsd-kind="Interface">IRootCluster</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/digraph.html" class="tsd-signature-type">Digraph</a></li>
-					<li><a href="../classes/graph.html" class="tsd-signature-type">Graph</a></li>
-					<li><a href="../classes/rootcluster.html" class="tsd-signature-type">RootCluster</a></li>
-					<li><a href="../classes/subgraph.html" class="tsd-signature-type">Subgraph</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -163,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IClusterCommonAttributes</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L130">types.ts:130</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L130">types.ts:130</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +164,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ihascomment.html">IHasComment</a>.<a href="ihascomment.html#comment">comment</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L51">types.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L51">types.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,10 +176,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="edges" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> edges</h3>
-					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L132">types.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L132">types.ts:132</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,17 +189,17 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L129">types.ts:129</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L129">types.ts:129</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="nodes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> nodes</h3>
-					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L131">types.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L131">types.ts:131</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,28 +210,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#size">size</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L79">types.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L79">types.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="subgraphs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> subgraphs</h3>
-					<div class="tsd-signature tsd-kind-icon">subgraphs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">subgraphs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L133">types.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L133">types.ts:133</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="values" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> values</h3>
-					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#attributesvalue" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesValue</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#values">values</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L80">types.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L80">types.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -252,13 +242,13 @@
 					<a name="addedge" class="tsd-anchor"></a>
 					<h3>add<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L141">types.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L141">types.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +259,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edge: <a href="iedge.html" class="tsd-signature-type">IEdge</a></h5>
+									<h5>edge: <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -280,13 +270,13 @@
 					<a name="addnode" class="tsd-anchor"></a>
 					<h3>add<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L137">types.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L137">types.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +287,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="inode.html" class="tsd-signature-type">INode</a></h5>
+									<h5>node: <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -308,13 +298,13 @@
 					<a name="addsubgraph" class="tsd-anchor"></a>
 					<h3>add<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L145">types.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L145">types.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +315,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h5>
+									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -336,20 +326,20 @@
 					<a name="apply" class="tsd-anchor"></a>
 					<h3>apply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#attributesentities" class="tsd-signature-type">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#attributesentities" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#apply">apply</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L83">types.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L83">types.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#attributesobject" class="tsd-signature-type">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#attributesentities" class="tsd-signature-type">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#attributesentities" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesEntities</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -367,7 +357,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L85">types.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L85">types.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -378,13 +368,13 @@
 					<a name="createedge" class="tsd-anchor"></a>
 					<h3>create<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><a href="inodewithport.html" class="tsd-signature-type">INodeWithPort</a><span class="tsd-signature-symbol"> | </span><a href="iforwardrefnode.html" class="tsd-signature-type">IForwardRefNode</a><span class="tsd-signature-symbol"> | </span><a href="../globals.html#edgetargetslike" class="tsd-signature-type">EdgeTargetsLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol"> | </span><a href="inodewithport.html" class="tsd-signature-type" data-tsd-kind="Interface">INodeWithPort</a><span class="tsd-signature-symbol"> | </span><a href="iforwardrefnode.html" class="tsd-signature-type" data-tsd-kind="Interface">IForwardRefNode</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#edgetargetslike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetsLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L194">types.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L194">types.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,13 +385,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>targets: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><a href="inodewithport.html" class="tsd-signature-type">INodeWithPort</a><span class="tsd-signature-symbol"> | </span><a href="iforwardrefnode.html" class="tsd-signature-type">IForwardRefNode</a><span class="tsd-signature-symbol"> | </span><a href="../globals.html#edgetargetslike" class="tsd-signature-type">EdgeTargetsLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>targets: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol"> | </span><a href="inodewithport.html" class="tsd-signature-type" data-tsd-kind="Interface">INodeWithPort</a><span class="tsd-signature-symbol"> | </span><a href="iforwardrefnode.html" class="tsd-signature-type" data-tsd-kind="Interface">IForwardRefNode</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#edgetargetslike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetsLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type">IEdge</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -409,13 +399,13 @@
 					<a name="createnode" class="tsd-anchor"></a>
 					<h3>create<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L173">types.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L173">types.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,10 +419,10 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type">INode</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -440,14 +430,14 @@
 					<a name="createsubgraph" class="tsd-anchor"></a>
 					<h3>create<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">?: </span><a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Subgraph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">?: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L177">types.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L177">types.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -458,27 +448,27 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L178">types.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L178">types.ts:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -493,7 +483,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#delete">delete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L84">types.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L84">types.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -510,15 +500,15 @@
 					<a name="edge" class="tsd-anchor"></a>
 					<h3>edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a></li>
-						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a></li>
-						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../modules.html#edgetargetlike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></li>
+						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../modules.html#edgetargetlike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></li>
+						<li class="tsd-signature tsd-kind-icon">edge<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L380">types.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L380">types.ts:380</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -526,37 +516,56 @@
 									<p>Create a edge.</p>
 								</div>
 								<p>By specifying a callback function, the target edge can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a edge.</span>
-  g.edge([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>]);
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a edge.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">edge</span><span style="color: #000000">([</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">]);</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   "a" -&gt; "b";</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   &quot;a&quot; -&gt; &quot;b&quot;;</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>targets: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>targets: <a href="../modules.html#edgetargetlike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Nodes.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved edge.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>edge: <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type">IEdge</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L408">types.ts:408</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L408">types.ts:408</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,72 +573,92 @@
 									<p>Create a edge and adapt the attributes.</p>
 								</div>
 								<p>By specifying a callback function, the target edge can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a edge and specifying its attributes.</span>
-  g.edge([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>], {
-    [attribute.color]: <span class="hljs-string">'red'</span>,
-    [attribute.label]: <span class="hljs-string">'my label'</span>,
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a edge and specifying its attributes.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">edge</span><span style="color: #000000">([</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">], {</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   "a" -&gt; "b" [</span>
-<span class="hljs-comment">//     color = "red",</span>
-<span class="hljs-comment">//     label = "my label",</span>
-<span class="hljs-comment">//   ];</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   &quot;a&quot; -&gt; &quot;b&quot; [</span>
+<span style="color: #008000">//     color = &quot;red&quot;,</span>
+<span style="color: #008000">//     label = &quot;my label&quot;,</span>
+<span style="color: #008000">//   ];</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>targets: <a href="../globals.html#edgetargetlike" class="tsd-signature-type">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>targets: <a href="../modules.html#edgetargetlike" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeTargetLike</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>attributes: <a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the edge.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved edge.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>edge: <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type">IEdge</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L432">types.ts:432</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L432">types.ts:432</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Set a common attribute for the edges in the cluster.</p>
 								</div>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Set a common attribute for the edges in the cluster.</span>
-  g.edge({
-    [attribute.color]: <span class="hljs-string">'red'</span>,
-    [attribute.label]: <span class="hljs-string">'my label'</span>,
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Set a common attribute for the edges in the cluster.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">edge</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   edge [</span>
-<span class="hljs-comment">//     color = "red",</span>
-<span class="hljs-comment">//     label = "my label",</span>
-<span class="hljs-comment">//   ];</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   edge [</span>
+<span style="color: #008000">//     color = &quot;red&quot;,</span>
+<span style="color: #008000">//     label = &quot;my label&quot;,</span>
+<span style="color: #008000">//   ];</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#edgeattributes" class="tsd-signature-type">EdgeAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#edge" class="tsd-signature-type" data-tsd-kind="Type alias">Edge</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the edges.</p>
 									</div>
@@ -643,13 +672,13 @@
 					<a name="existedge" class="tsd-anchor"></a>
 					<h3>exist<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">exist<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">exist<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L153">types.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L153">types.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -660,7 +689,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edge: <a href="iedge.html" class="tsd-signature-type">IEdge</a></h5>
+									<h5>edge: <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -677,7 +706,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L149">types.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L149">types.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -699,13 +728,13 @@
 					<a name="existsubgraph" class="tsd-anchor"></a>
 					<h3>exist<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">exist<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">exist<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L157">types.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L157">types.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -716,7 +745,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h5>
+									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -727,14 +756,14 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L81">types.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L81">types.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -743,7 +772,7 @@
 									<h5>key: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -751,13 +780,13 @@
 					<a name="getnode" class="tsd-anchor"></a>
 					<h3>get<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L192">types.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L192">types.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -776,7 +805,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -784,13 +813,13 @@
 					<a name="getsubgraph" class="tsd-anchor"></a>
 					<h3>get<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L184">types.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L184">types.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -805,7 +834,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -813,38 +842,39 @@
 					<a name="graph" class="tsd-anchor"></a>
 					<h3>graph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L455">types.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L455">types.ts:455</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Set a common attribute for the clusters in the cluster.</p>
 								</div>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  g.graph({
-    [attribute.color]: <span class="hljs-string">'red'</span>,
-    [attribute.label]: <span class="hljs-string">'my label'</span>,
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">graph</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   graph [</span>
-<span class="hljs-comment">//     color = "red",</span>
-<span class="hljs-comment">//     label = "my label",</span>
-<span class="hljs-comment">//   ];</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   graph [</span>
+<span style="color: #008000">//     color = &quot;red&quot;,</span>
+<span style="color: #008000">//     label = &quot;my label&quot;,</span>
+<span style="color: #008000">//   ];</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the clusters.</p>
 									</div>
@@ -858,15 +888,15 @@
 					<a name="node" class="tsd-anchor"></a>
 					<h3>node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a></li>
-						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a></li>
-						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></li>
+						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></li>
+						<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L308">types.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L308">types.ts:308</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -874,15 +904,16 @@
 									<p>Create a node by specifying its id (or get it if it already exists).</p>
 								</div>
 								<p>By specifying a callback function, the target node can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a node with id as A.</span>
-  g.node(<span class="hljs-string">'A'</span>);
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a node with id as A.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   "A";</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   &quot;A&quot;;</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -893,18 +924,36 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved node.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>node: <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type">INode</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L336">types.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L336">types.ts:336</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -912,21 +961,22 @@
 									<p>Create a node (or get one if it already exists) and adapt the attributes.</p>
 								</div>
 								<p>By specifying a callback function, the target node can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a node by specifying its id and specifying its attributes.</span>
-  g.node(<span class="hljs-string">'A'</span>, {
-    [attribute.color]: <span class="hljs-string">'red'</span>,
-    [attribute.label]: <span class="hljs-string">'my label'</span>,
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a node by specifying its id and specifying its attributes.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">, {</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   "A" [</span>
-<span class="hljs-comment">//     color = "red",</span>
-<span class="hljs-comment">//     label = "my label",</span>
-<span class="hljs-comment">//   ];</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   &quot;A&quot; [</span>
+<span style="color: #008000">//     color = &quot;red&quot;,</span>
+<span style="color: #008000">//     label = &quot;my label&quot;,</span>
+<span style="color: #008000">//   ];</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -937,50 +987,69 @@
 									</div>
 								</li>
 								<li>
-									<h5>attributes: <a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the node.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved node.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>node: <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type">INode</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L360">types.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L360">types.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Set a common attribute for the nodes in the cluster.</p>
 								</div>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Set a common attribute for the nodes in the cluster.</span>
-  g.node({
-    [attribute.color]: <span class="hljs-string">'red'</span>,
-    [attribute.label]: <span class="hljs-string">'my label'</span>,
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Set a common attribute for the nodes in the cluster.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   node [</span>
-<span class="hljs-comment">//     color = "red",</span>
-<span class="hljs-comment">//     label = "my label",</span>
-<span class="hljs-comment">//   ];</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   node [</span>
+<span style="color: #008000">//     color = &quot;red&quot;,</span>
+<span style="color: #008000">//     label = &quot;my label&quot;,</span>
+<span style="color: #008000">//   ];</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#nodeattributes" class="tsd-signature-type">NodeAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/attribute.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the nodes.</p>
 									</div>
@@ -994,13 +1063,13 @@
 					<a name="removeedge" class="tsd-anchor"></a>
 					<h3>remove<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L165">types.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L165">types.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1011,7 +1080,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edge: <a href="iedge.html" class="tsd-signature-type">IEdge</a></h5>
+									<h5>edge: <a href="iedge.html" class="tsd-signature-type" data-tsd-kind="Interface">IEdge</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1022,13 +1091,13 @@
 					<a name="removenode" class="tsd-anchor"></a>
 					<h3>remove<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L161">types.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L161">types.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,7 +1108,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="inode.html" class="tsd-signature-type">INode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5>node: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="inode.html" class="tsd-signature-type" data-tsd-kind="Interface">INode</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1050,13 +1119,13 @@
 					<a name="removesubgraph" class="tsd-anchor"></a>
 					<h3>remove<wbr>Subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Subgraph<span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L169">types.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L169">types.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1067,7 +1136,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h5>
+									<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1078,14 +1147,14 @@
 					<a name="set" class="tsd-anchor"></a>
 					<h3>set</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesvalue" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="iattributesbase.html">IAttributesBase</a>.<a href="iattributesbase.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L82">types.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L82">types.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1094,7 +1163,7 @@
 									<h5>key: <span class="tsd-signature-type">T</span></h5>
 								</li>
 								<li>
-									<h5>value: <a href="../globals.html#attributesvalue" class="tsd-signature-type">AttributesValue</a></h5>
+									<h5>value: <a href="../modules.html#attributesvalue" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesValue</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1105,16 +1174,16 @@
 					<a name="subgraph" class="tsd-anchor"></a>
 					<h3>subgraph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
-						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
-						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
-						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>attributes<span class="tsd-signature-symbol">: </span><a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
+						<li class="tsd-signature tsd-kind-icon">subgraph<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L221">types.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L221">types.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1122,20 +1191,21 @@
 									<p>Create a subgraph by specifying its id (or get it if it already exists).</p>
 								</div>
 								<p>By specifying a callback function, the target subgraph can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a cluster with id as A.</span>
-  g.subgraph(<span class="hljs-string">'A'</span>, <span class="hljs-function">(<span class="hljs-params">A</span>) =&gt;</span> {
-    <span class="hljs-comment">// Create a node with id as A1 in cluster A.</span>
-    A.node(<span class="hljs-string">'A1'</span>);
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a cluster with id as A.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">subgraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">A</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Create a node with id as A1 in cluster A.</span>
+<span style="color: #000000">    </span><span style="color: #0070C1">A</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A1&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   subgraph "A" {</span>
-<span class="hljs-comment">//     "A1";</span>
-<span class="hljs-comment">//   }</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   subgraph &quot;A&quot; {</span>
+<span style="color: #008000">//     &quot;A1&quot;;</span>
+<span style="color: #008000">//   }</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1146,18 +1216,36 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved subgraph.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L250">types.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L250">types.ts:250</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1165,22 +1253,23 @@
 									<p>Create a subgraph (or get one if it already exists) and adapt the attributes.</p>
 								</div>
 								<p>By specifying a callback function, the target subgraph can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a cluster with id as A and specifying its attributes.</span>
-  g.subgraph(<span class="hljs-string">'A'</span>, { [attribute.color]: <span class="hljs-string">'red'</span>, [attribute.label]: <span class="hljs-string">'my label'</span> }, <span class="hljs-function">(<span class="hljs-params">A</span>) =&gt;</span> {
-    <span class="hljs-comment">// Create a node with id as A1 in cluster A.</span>
-    A.node(<span class="hljs-string">'A1'</span>);
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a cluster with id as A and specifying its attributes.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">subgraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">, { </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">, </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000"> }, (</span><span style="color: #001080">A</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Create a node with id as A1 in cluster A.</span>
+<span style="color: #000000">    </span><span style="color: #0070C1">A</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A1&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   subgraph "A" {</span>
-<span class="hljs-comment">//     color = "red";</span>
-<span class="hljs-comment">//     label = "my label";</span>
-<span class="hljs-comment">//     "A1";</span>
-<span class="hljs-comment">//   }</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   subgraph &quot;A&quot; {</span>
+<span style="color: #008000">//     color = &quot;red&quot;;</span>
+<span style="color: #008000">//     label = &quot;my label&quot;;</span>
+<span style="color: #008000">//     &quot;A1&quot;;</span>
+<span style="color: #008000">//   }</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1191,24 +1280,42 @@
 									</div>
 								</li>
 								<li>
-									<h5>attributes: <a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the subgraph.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved subgraph.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L278">types.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L278">types.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1216,44 +1323,63 @@
 									<p>Create anonymous subgraphs and and adapt the attributes.</p>
 								</div>
 								<p>By specifying a callback function, the target subgraph can be received and manipulated as an argument.</p>
-								<pre><code class="language-ts"><span class="hljs-keyword">const</span> G = digraph(<span class="hljs-string">'G'</span>, <span class="hljs-function">(<span class="hljs-params">g</span>) =&gt;</span> {
-  <span class="hljs-comment">// Create a anonymous cluster and specifying its attributes.</span>
-  g.subgraph({ [attribute.color]: <span class="hljs-string">'red'</span>, [attribute.label]: <span class="hljs-string">'my label'</span> }, <span class="hljs-function">(<span class="hljs-params">A</span>) =&gt;</span> {
-    <span class="hljs-comment">// Create a node with id as A1 in anonymous cluster.</span>
-    A.node(<span class="hljs-string">'A1'</span>);
-  });
-});
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">G</span><span style="color: #000000"> = </span><span style="color: #795E26">digraph</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;G&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">g</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Create a anonymous cluster and specifying its attributes.</span>
+<span style="color: #000000">  </span><span style="color: #001080">g</span><span style="color: #000000">.</span><span style="color: #795E26">subgraph</span><span style="color: #000000">({ </span><span style="color: #001080">[attribute.color]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;red&#039;</span><span style="color: #000000">, </span><span style="color: #001080">[attribute.label]:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my label&#039;</span><span style="color: #000000"> }, (</span><span style="color: #001080">A</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Create a node with id as A1 in anonymous cluster.</span>
+<span style="color: #000000">    </span><span style="color: #0070C1">A</span><span style="color: #000000">.</span><span style="color: #795E26">node</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;A1&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">});</span>
 
-<span class="hljs-built_in">console</span>.log(toDot(G));
-<span class="hljs-comment">// digraph "G" {</span>
-<span class="hljs-comment">//   subgraph {</span>
-<span class="hljs-comment">//     color = "red";</span>
-<span class="hljs-comment">//     label = "my label";</span>
-<span class="hljs-comment">//     "A1";</span>
-<span class="hljs-comment">//   }</span>
-<span class="hljs-comment">// }</span></code></pre>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">toDot</span><span style="color: #000000">(</span><span style="color: #0070C1">G</span><span style="color: #000000">));</span>
+<span style="color: #008000">// digraph &quot;G&quot; {</span>
+<span style="color: #008000">//   subgraph {</span>
+<span style="color: #008000">//     color = &quot;red&quot;;</span>
+<span style="color: #008000">//     label = &quot;my label&quot;;</span>
+<span style="color: #008000">//     &quot;A1&quot;;</span>
+<span style="color: #008000">//   }</span>
+<span style="color: #008000">// }</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attributes: <a href="../globals.html#clustersubgraphattributes" class="tsd-signature-type">ClusterSubgraphAttributes</a></h5>
+									<h5>attributes: <a href="../modules.html#attributesobject" class="tsd-signature-type" data-tsd-kind="Type alias">AttributesObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;K&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;URL&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;area&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bgcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;colorscheme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fillcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontcolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontname&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fontsize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gradientangle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;href&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;label&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labeljust&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;labelloc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;layer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lheight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lp&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;margin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nojustify&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pencolor&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;penwidth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;peripheries&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rank&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;sortv&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;style&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;target&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tooltip&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Object of attributes to be adapted to the subgraph.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved subgraph.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2daf1de/src/types.ts#L286">types.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/ts-graphviz/ts-graphviz/blob/2c1ecd7/src/types.ts#L286">types.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1265,13 +1391,31 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Callbacks for manipulating created or retrieved subgraph.</p>
 									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>subgraph<span class="tsd-signature-symbol">: </span><a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>subgraph: <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type">ISubgraph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="isubgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">ISubgraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1280,8 +1424,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -1411,12 +1555,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
